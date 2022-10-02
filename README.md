@@ -73,14 +73,16 @@ Trabajo final del curso de Relatividad 2. (2022-II)
     Desde ahora trabajaras en tu respectiva rama. Podrás hacer cualquier cambio sin afectar a la plantilla principal.
 
 ### La importancia de los **COMMITS**
-
+---
 1. Cuando realizamos los cambios del archivo, claro está desde local, NO se guardarán autamáticamente en GitHub y en Git. Es necesario indicarle que archivos hará "seguimiento" el control de versiones Git. 
 
     Dentro de nuestro directorio clonado FinalRelativity tenemos los siguientes archivos
-![Directorio](/img/readme02.PNG)
 
-   Al ejecutar el archivo `.tex` se generan diferentes archivos
-![DirectorioLatex](/img/readme03.PNG)
+    ![Directorio](/img/readme02.PNG)
+
+    Al ejecutar el archivo `.tex` se generan diferentes archivos
+
+   ![DirectorioLatex](/img/readme03.PNG)
 
     Bien, algo importante, **no es necesario hacer seguimiento a todos los archivos generados despues de ejecutar LaTeX** solo nos importan dos archivos, las cuales estaremos editando constantemente, que son: 
 
@@ -88,13 +90,13 @@ Trabajo final del curso de Relatividad 2. (2022-II)
    - biblio.bib
 
     > El archivo `.pdf` no es posible administrarlo con el versióno de control Git, porque Git solo puede guardar los historiales de archivos tipo *texto plano*. Por esta razón el `.pdf` no estará en seguimiento.
-
+---
 2. Verificación y subida de archivos
 
     Verificamos que archivos se han modificado
        
        $ git status
-    
+
     ![Readme04](/img/readme04.PNG)
     
     Nos indica que tres archivos se han modificado últimamnte. Ahora confirmaremos para que se guardan en el historial y posteriormente saber que se hizo en ese momento. "Lo llamo congelamiento"
