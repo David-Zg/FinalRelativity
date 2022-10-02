@@ -69,6 +69,11 @@ Trabajo final del curso de Relatividad 2. (2022-II)
     Para ver todas las ramas 
 
        $ git branch
+    
+    Subir la rame que creaste a GitHub
+
+       $ git push -u origin <nombre de la nueva rama>
+
 
     Desde ahora trabajaras en tu respectiva rama. Podrás hacer cualquier cambio sin afectar a la plantilla principal.
 
@@ -141,3 +146,10 @@ Trabajo final del curso de Relatividad 2. (2022-II)
        $ git push origin main
     
     > En este caso estamos trayendo la rama *prueba* mezclando con la rama *main*. Y cargamos al repositorio GitHub.
+
+3. Borrar ramas
+
+       $ git branch -d <rama borrar>
+       $ git branch -D <rama borrar>
+
+       $ git push origin --delete <rama borrar>
