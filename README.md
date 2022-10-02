@@ -43,7 +43,7 @@ Trabajo final del curso de Relatividad 2. (2022-II)
 
 ## Líneas de código necesarios para el trabajo colaborativo
 
-1. Nos dirigimos al [siguiente repositorio](https://github.com/David-Zg/FinalRelativity), ``Code` y `SSH`, copiamos el enlace.
+1. Nos dirigimos al [siguiente repositorio](https://github.com/David-Zg/FinalRelativity), `Code` y `SSH`, copiamos el enlace.
 
     ![Image01](img\readme01.PNG)
 
