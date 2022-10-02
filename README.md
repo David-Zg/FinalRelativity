@@ -1,2 +1,98 @@
 # FinalRelativity
 Trabajo final del curso de Relatividad 2. (2022-II)
+
+## Primeros pasos para la interacción con Git y GitHub
+
+1. Crear una cuenta en la plataforma de [GitHub](https://github.com/) con tu correo.
+2. Descargar Git desde este [enlace](https://git-scm.com/download/win) según los requerimientos de tu PC y eguir los pasos para la instalación.
+
+## Configuración inicial en Git
+
+1. Configuramos nuestras credenciales `user.email` y `user.name`
+    
+       $ git config --global user.name <your name>
+
+       $ git config --global user.email <your email>
+
+    Verificamos nuestras credenciales
+       
+       $ git config --global -l
+       user.name=<your_name>
+       user.email=<your_email>
+
+2. Para sincronizar con GitHub debemos asignar un tipo de comunicación con la plataforma, para ello crearemos una llave SSH de la siguiente manera
+
+       $ ssh-keygen -t rsa -b 4096 -C "<correo registrado en GitHub>"
+
+    Dar enter a todas las opciones que salgan. Activamos el gestor de comunicación
+
+       $ eval $(ssh-agent -s)
+       Agent pid 762
+    
+    Agregamos la llave a nuestro agente
+
+       $ ssh-add ~/.ssh/id_rsa
+
+    Copiamos la llave (pública) y pegamos en GitHub 
+
+       $ clip < ~/.ssh/id_rsa.pub
+
+    Compartan los nombres de sus usuarios de GitHub para adignar los permisos para el trabajo colaborativo. 
+
+    Les llegara una invitación a traves de GitHub, la cual deben aceptar.
+
+## Líneas de código necesarios para el trabajo colaborativo
+
+1. Nos dirigimos al [siguiente repositorio](https://github.com/David-Zg/FinalRelativity), ``Code` y `SSH`, copiamos el enlace.
+
+    ![Image01](img\readme01.PNG)
+
+2. Clonamos el repositorio para el trabajo local
+        
+        $ git clone git@github.com:David-Zg/FinalRelativity.git
+    
+    Listo, tenemos el projecto en local.
+
+3. Creamos una rama (branch) para el trabajo individual (el tema que nos toque)
+       
+       $ git branch <nombre da la nueva rama>
+    >Al crear una rama esta se crea con todo el historial actualizado en GitHub.
+
+     Para dirigirte a la nueva rama que creaste
+
+       $ git checkout <nombre de la nueva rama>
+    
+    O puedes simplificar los dos comandos anteriores con el siguiente
+       
+       $ git checkout -b <nombre de la rama>
+
+    Para ver todas las ramas 
+
+       $ git branch
+
+    Desde ahora trabajaras en tu respectiva rama. Podrás hacer cualquier cambio sin afectar a la plantilla principal.
+
+### La importancia de los **COMMITS**
+
+1. Cuando realizamos los cambios del archivo, claro está desde local, NO se guardarán autamáticamente en GitHub y en Git. Es necesario indicarle que archivos hará "seguimiento" el control de versiones Git. 
+
+    Dentro de nuestro directorio clonado FinalRelativity tenemos los siguientes archivos
+![Directorio](img\readme02.PNG)
+
+   Al ejecutar el archivo `.tex` se generan diferentes archivos
+![DirectorioLatex](img\readme03.PNG)
+
+    Bien, algo importante, **no es necesario hacer seguimiento a todos los archivos generados despues de ejecutar LaTeX** solo nos importan dos archivos, las cuales estaremos editando constantemente, que son: 
+
+   - Trabajo_final_Relatividad-II.tex
+   - biblio.bib
+
+    > El archivo `.pdf` no es posible administrarlo con el versióno de control Git, porque Git solo puede guardar los historiales de archivos tipo *texto plano*. Por esta razón el `.pdf` no estará en seguimiento.
+
+2. 
+
+
+## Líneas adicionales
+1. Para verificar todos los **commits** de cada una de las ramas
+       
+       $ git show-branch
