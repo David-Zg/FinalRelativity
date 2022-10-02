@@ -45,7 +45,7 @@ Trabajo final del curso de Relatividad 2. (2022-II)
 
 1. Nos dirigimos al [siguiente repositorio](https://github.com/David-Zg/FinalRelativity), `Code` y `SSH`, copiamos el enlace.
 
-    ![Image01](img\readme01.PNG)
+    ![Image01](/img/readme01.PNG)
 
 2. Clonamos el repositorio para el trabajo local
         
@@ -77,10 +77,10 @@ Trabajo final del curso de Relatividad 2. (2022-II)
 1. Cuando realizamos los cambios del archivo, claro está desde local, NO se guardarán autamáticamente en GitHub y en Git. Es necesario indicarle que archivos hará "seguimiento" el control de versiones Git. 
 
     Dentro de nuestro directorio clonado FinalRelativity tenemos los siguientes archivos
-![Directorio](img\readme02.PNG)
+![Directorio](/img/readme02.PNG)
 
    Al ejecutar el archivo `.tex` se generan diferentes archivos
-![DirectorioLatex](img\readme03.PNG)
+![DirectorioLatex](/img/readme03.PNG)
 
     Bien, algo importante, **no es necesario hacer seguimiento a todos los archivos generados despues de ejecutar LaTeX** solo nos importan dos archivos, las cuales estaremos editando constantemente, que son: 
 
@@ -95,7 +95,7 @@ Trabajo final del curso de Relatividad 2. (2022-II)
        
        $ git status
     
-    ![Readme04](img\readme04.PNG)
+    ![Readme04](/img/readme04.PNG)
     
     Nos indica que tres archivos se han modificado últimamnte. Ahora confirmaremos para que se guardan en el historial y posteriormente saber que se hizo en ese momento. "Lo llamo congelamiento"
     
@@ -104,13 +104,13 @@ Trabajo final del curso de Relatividad 2. (2022-II)
        $ git add README.md Trabajo_final_Relatividad-II.tex biblio.bib
        $ git status
 
-    ![Readme05](img\readme05.PNG)
+    ![Readme05](/img/readme05.PNG)
 
     > Los archivos de verde están listos para su "congelamiento"
 
        $ git commit -m <"Mensaje de identificacion">
 
-    ![Readme06](img\readme06.PNG)
+    ![Readme06](/img/readme06.PNG)
 
     > Fueron agregados tres nuevos archivos.
 
@@ -118,11 +118,11 @@ Trabajo final del curso de Relatividad 2. (2022-II)
 
        $ git push origin <nombre de tu rama>
 
-    ![Readme07](img\readme07.PNG)
+    ![Readme07](/img/readme07.PNG)
     
     > Fueron subidos con exito.
 
-    ![Readme07](img\readme08.PNG)
+    ![Readme07](/img/readme08.PNG)
 
 
     CONTINUARÁ...!!!
