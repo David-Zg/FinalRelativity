@@ -153,3 +153,10 @@ Trabajo final del curso de Relatividad 2. (2022-II)
        $ git branch -D <rama borrar>
 
        $ git push origin --delete <rama borrar>
+
+4. Descargar las nuevas ramas
+ 
+       $ git pull
+       $ git branch -a
+    
+    > La rama descargada aparece como `remotes/origin/<nombre de la rama>`
