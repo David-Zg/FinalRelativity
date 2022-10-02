@@ -133,3 +133,11 @@ Trabajo final del curso de Relatividad 2. (2022-II)
 1. Para verificar todos los **commits** de cada una de las ramas
        
        $ git show-branch
+
+2. Mezclar los cambios de una rama a la actual (ubicación en la rama actual `git branch`)
+
+       $ git merge prueba
+       >...
+       $ git push origin main
+    
+    > En este caso estamos trayendo la rama *prueba* mezclando con la rama *main*. Y cargamos al repositorio GitHub.
