@@ -89,9 +89,44 @@ Trabajo final del curso de Relatividad 2. (2022-II)
 
     > El archivo `.pdf` no es posible administrarlo con el versióno de control Git, porque Git solo puede guardar los historiales de archivos tipo *texto plano*. Por esta razón el `.pdf` no estará en seguimiento.
 
-2. 
+2. Verificación y subida de archivos
+
+    Verificamos que archivos se han modificado
+       
+       $ git status
+    
+    ![Readme04](img\readme04.PNG)
+    
+    Nos indica que tres archivos se han modificado últimamnte. Ahora confirmaremos para que se guardan en el historial y posteriormente saber que se hizo en ese momento. "Lo llamo congelamiento"
+    
+    Agregamos los archivos al congelamiento
+
+       $ git add README.md Trabajo_final_Relatividad-II.tex biblio.bib
+       $ git status
+
+    ![Readme05](img\readme05.PNG)
+
+    > Los archivos de verde están listos para su "congelamiento"
+
+       $ git commit -m <"Mensaje de identificacion">
+
+    ![Readme06](img\readme06.PNG)
+
+    > Fueron agregados tres nuevos archivos.
+
+3. Tenemos que subir esto a GitHub para poder verlo todos los que colaboramos con el trabajo.
+
+       $ git push origin <nombre de tu rama>
+
+    ![Readme07](img\readme07.PNG)
+    
+    > Fueron subidos con exito.
+
+    ![Readme07](img\readme08.PNG)
 
 
+    CONTINUARÁ...!!!
+    
 ## Líneas adicionales
 1. Para verificar todos los **commits** de cada una de las ramas
        
