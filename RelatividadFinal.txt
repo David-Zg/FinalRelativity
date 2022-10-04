@@ -1,0 +1,30 @@
+Colocar el principio de equivalencia --> marco teorico
+Calculo de la dilatacion gravitacional (Expo 2)  ----> marco teorica
+Comentar los expirentos realizados para comprobarlo
+Un ejercicio aplicactivo(Expo 2)
+
+Introduccion
+_Comentamos la relatividad de galileo (ubillus)
+_Las transformadas de Lorentz (ubllus)
+_Metrica de Minkoski (ubillus)
+_Relatividad Especial
+_Principio de equivalencia
+_Corrimiento al rojo
+_dilatacion del tiempo gravitatorio
+_Avances actuales(GPS \trianguleT=40ns ---> \trianguleL=300Km)
+
+Marco Teorico
+_Existia dos tipos de masa en fisica(gravitaoria y inercial) -> Fg=-GMm/r^2 (gravitatoria)  y F=ma (inercial) (David)
+_Principio de equivalencia (masa gravitatoria = masa inercial) ma=Kmi y K=1 (David)
+_Dilatacion del tiempo cinetico y gravitacional (ubillus)
+_Dilatacion gravitatorio del tiempo (ubillus)
+
+Aplicaciones 
+GPS (Andres)
+Microgravedad contra el cancer (Efectos de la microgravedad en sistemas biologicos) (Andres)
+
+
+
+
+
+
