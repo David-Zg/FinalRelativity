@@ -68,11 +68,85 @@ bottom=2.54cm]
 	\section{ Introducción} 
 	
 	\section{Marco Teórico}
-		\subsection{Masa gravitatoria y masa inercial}
-			
-		
 		\subsection{Principio de equivalencia}
+		El principio de equivalencia fuerte se usa para deducir los resultados de la curvatura gravitacional del rayo de luz, corrimiento al rojo gravitacional y dilatación del tiempo gravitacional. Einstein fué motivado por el Principio de Equivalencia Físico para proponer una descripción de la curvatura del espacio-tiempo del campo gravitatorio. \citep*{TaPeuCheng2005}
+
+		La formulación final de la teoría de la gravitación de Einstein, la teoría general de la relatividad, contiene automáticamente y con precisión el Principio de Equivalencia. Históricamente, es el punto de partida de una serie de descubrimientos que finalmente condujeron a Einstein a la teoría gemométrica de la gravedad, en la que el campo gravitatorio es el espacio tiempo deformado.
+
+			\subsubsection{Potencial gravitatorio newtoniano}
+			Se sospecha de la teoría gravitacional de Newton conceptualmente por ser una teoría de acción a distancia (Ec.\ref*{Ec:01}). Se supone que la fuerza gravitacional de interacción entre cuerpos se transmite instantáneamente, es decir, con velocidad infinita, en contradicción al requerimiento relativístico de que la velocidad límite es $c$. \citep*{resnick1968introduction}
 			
+			\begin{equation}
+				\mathbf{F}(\mathbf{r}) = -G_N \frac{mM}{r^2}\hat{\mathbf{r}}
+				\label{Ec:01}
+			\end{equation}
+			
+			donde $G_N$ es la constante de Newton, el punto de la masa $M$ está localizado en el origen del sistema de coordenadas y $m$ en la posisición $\mathbf{r}$. Así como en el caso de la fuerza electrostática $\mathbf{F}(\mathbf{r}) = q' \mathbf{E}(\mathbf{r})$, de la misma manera, la Ec.\ref*{Ec:01} podemos escribirlo como 
+			\begin{equation}
+				\mathbf{F}(\mathbf{r}) = m \mathbf{g}(\mathbf{r})
+				\label{Ec:02}
+			\end{equation}
+			esto define el campo gravitacional $\mathbf{g}(\mathbf{r})$ como la fuerza gravitacional por unidad de masa. La segunda ley de Newton en terminos de este campo gravitacional para una masa puntual $M$ es 
+			\begin{equation}
+				\mathbf{g}(\mathbf{r}) 
+				=
+				-G_{N} \frac{M}{r^2}\hat{\mathbf{r}}
+				\label{Ec:03}
+			\end{equation}
+
+			De forma similar al campo electrico que puede ser expresado por medio de la ley de Gauss, expresamos el campo gravitatorio de la siguiente manera
+			\begin{equation}
+				\oint_{S} \mathbf{g} \cdot d\mathbf{A}
+				=
+				-4\pi G_{N} M
+				\label{Ec:04}
+			\end{equation}
+			la integral de área es el flujo del campo gravitatorio a través de cualquier superficie cerrada $S$, mientras que $M$  es la masa total encerrada dentro de $S$. Expresada en forma de ecuación diferencial,  por el teorema de la divergencia y en términos de la función de masa
+			\begin{equation}
+				\int \nabla  \cdot \mathbf{g}dV 
+				=
+				-4 \pi G_N \int \rho dV
+				\label{Ec:05}
+			\end{equation}
+			Para cualquier tipo de volumen tendremos
+			\begin{equation}
+				\nabla \cdot \mathbf{g}
+				=
+				-4 \pi G_N  \rho 
+				\label{Ec:06}
+			\end{equation}
+			esta es la ecuación de campo de Newton en forma diferencial. El campo gravitacional $\Phi (x)$ estará definido a través del campo gravitacional $\mathbf{g}(x) = - \nabla \Phi(x)$, entonces la expresión anterior toma la siguiente forma 
+			\begin{equation}
+				\bigtriangledown^2 \Phi 
+				=
+				4 \pi G_N \rho
+				\label{Ec:07}
+			\end{equation}
+
+			Para obtener la ecuación gravitacional de movimiento, insertamos la Ec.\ref*{Ec:02} en la segunda ley de Newton $\mathbf{F}=m\mathbf{\ddot{r}}$
+			\begin{equation}
+				\mathbf{\ddot{r}}
+				=
+				\mathbf{g}
+				\label{Ec:08}
+			\end{equation}
+			tiene la particularidad de que es totalmente independiente de cualquier propiedad (masa, carga, etc). Expresado en términos de potencial gravitatorio 
+			\begin{equation}
+				\mathbf{\ddot{r}}
+				=
+				- \nabla \Phi.
+			\end{equation}
+
+
+			\subsubsection{Masa gravitatoria y masa inercial}
+			
+			\subsubsection{El principio de equivalencia y su importancia}
+
+				Este principio fué aplicado inicialmente por Galileo y Newton.
+
+			\subsection{Implicancias del Principio de equivalencia fuerte - Dilatación del tiempo gravitacional}
+			En los experimentos (\citet*{PoundRebka1960}, \citet*{PoundSnider1964}) a primera vista, este cambio de frecuencia gravitacional parece incoherente. ¿Cómo es posible que un observador, inmovil respecto al emisor, reciba un número de crestas de onda por unidad de tiempo diferente al emitido? La radical y sencilla respuesta de Einstein es: mientras que el número de crestas de onda no cambia, la propia unidad de tiempo cambia en presencia de la gravedad. Los relojes funcionan a ritmos diferentes cuando se sitúan en distintos puntos del campo gravitatorio existiendo un efecto de dilatación gravitatoria del tiempo.
+
 	\section{Conclusiones}
 	
 	\nocite{*}
